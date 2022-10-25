@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+	<script type="text/javascript">
+		
+		function calculer(argument) 
+		{
+			var a = document.getElementById("p1").value;
+			var b = document.getElementById("q1").value;
+			var c = Number(a) * Number(b);
+			document.getElementById("r1").value = c;
+
+			var a = document.getElementById("p2").value;
+			var b = document.getElementById("q2").value;
+			var c = Number(a) * Number(b);
+			document.getElementById("r2").value = c;
+
+			var a = document.getElementById("p3").value;
+			var b = document.getElementById("q3").value;
+			var c = Number(a) * Number(b);
+			document.getElementById("r3").value = c;
+
+			var a = document.getElementById("r1").value;
+			var b = document.getElementById("r2").value;
+			var c = document.getElementById("r3").value;
+			var d = Number(a) + Number(b) + Number(c);
+			document.getElementById("f1").value = d;
+		}
+
+		function effacer()
+		{
+			r1.value="  ";
+			p1.value="  ";
+			q1.value="  ";
+			r2.value="  ";
+			q2.value="  ";
+			p2.value="  ";
+			r3.value="  ";
+			q3.value="  ";
+			p3.value="  ";
+			f1.value="  ";
+
+		}
+
+	</script>
+</head>
+<body>
+
+	<h1><center>Facture en javascript</center></h1>
+<table>
+		<tr>
+			<td> Article : </td>
+			<td> Prix : </td>
+			<td> Quantité : </td>
+			<td> resultat : </td>	
+		</tr>
+		<tr>
+			<td> <input type="text" name="num1" id="n1" placeholder="Saisir une article"> </td>
+			<td> <input type="text" name="num1" id="p1" placeholder="0"> </td>
+			<td> <input type="text" name="num1" id="q1" placeholder="0"> </td>
+			<td> <input type="text" name="num1" id="r1" placeholder="0"> </td>
+
+		</tr>
+		<tr>
+			<td> <input type="text" name="num1" id="n2" placeholder="Saisir une article"> </td>
+			<td> <input type="text" name="num1" id="p2" placeholder="0"> </td>
+			<td> <input type="text" name="num1" id="q2" placeholder="0"> </td>
+			<td> <input type="text" name="num1" id="r2" placeholder="0"> </td>
+
+		</tr>
+		<tr>
+			<td> <input type="text" name="num1" id="n3" placeholder="Saisir une article"> </td>
+			<td> <input type="text" name="num1" id="p3" placeholder="0"> </td>
+			<td> <input type="text" name="num1" id="q3" placeholder="0"> </td>
+			<td> <input type="text" name="num1" id="r3" placeholder="0"> </td>
+
+		</tr>
+		<tr>
+			<td> <input type="text" name="num1" id="n1" class="vide"> </td>
+			<td> <button onclick="effacer()"> reinitialiser </button> </td>
+			<td> <button onclick="calculer()"> résultat </button> </td>
+			<td> <input type="text" name="num1" id="f1" placeholder="0"> </td>
+
+		</tr>
+
+</table>
+</body>
+</html>

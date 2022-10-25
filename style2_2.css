@@ -1,0 +1,89 @@
+h1{
+	color: #79CBB8;
+	font-family: cursive;
+	font-size: 2em;
+}
+button{
+	border: 2px solid black;
+	border-radius: 26px;
+	text-align: center;
+	padding: 15px 35px;
+	background-color: #79CBB8;
+	margin-top: 3px;
+	width: 300px;
+}
+div{
+	border: 2px solid #79CBB8;
+	border-radius: 20px;
+	margin-left: 38%;
+	padding-left: 38%;
+	padding: 17px;
+	width: 20%;
+}
+
+body{
+	text-align: center;
+	background-color: #500472;
+}
+
+button:hover{
+	color: #79CBB8;
+	background-color: #500472;
+	border: 2px solid #79CBB8;
+}
+.r1{
+	border: 2px solid royalblue;
+	background-color: black;
+	border-radius: 20px;
+	width: 20%;
+
+}
+h2{
+	color: royalblue;
+	font-size: 2em;
+}
+h3{
+	color: red;
+	font-size: 2em;
+}
+input{
+	border: 2px solid white;
+	border-radius: 20px;
+	background-color: royalblue;
+	height: 30px;
+	width: 200px;
+}
+.ts{
+
+	border: 2px solid white;
+	border-radius: 20px;
+	background-color: red;
+}
+.b1{
+	background-color: royalblue;
+	padding: 10px;
+	width: 100px;
+
+}
+.s1:hover{
+	color: red;
+	background-color: black;
+	border: 2px solid red;
+}
+.b1:hover{
+	color: royalblue;
+	background-color: black;
+	border: 2px solid royalblue;
+}
+
+.t1{
+	border: 2px solid red;
+	background-color: black;
+	border-radius: 20px;
+	width: 20%;
+}
+.s1{
+	background-color: red;
+	padding: 10px;
+	width: 100px;
+}

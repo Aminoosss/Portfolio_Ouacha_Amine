@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function calculer(argument) 
+		{
+			var a = document.getElementById("n1").value;
+			var b = document.getElementById("n2").value;
+			var c = Number(a) + Number(b);
+			document.getElementById("res").value = c;
+		}
+	</script>
+</head>
+<body>
+<fieldset>
+		<legend> Calcul</legend>
+<input type="text" name="num1" id="n1" placeholder="Saisir une valeur">
+<input type="text" name="num2" id="n2" placeholder="Saisir une valeur">
+<input type="text" name="res" id="res" placeholder="Résultat" readonly>
+<button onclick="calculer()"> calculer </button>
+</fieldset>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+legend
+{
+	color: darkred;
+	font-weight: bold;
+}
+.inp,select
+{
+	width: 200px;
+	border: 2px solid darkblue;
+	border-radius: 5px;
+	padding: 3px;
+	margin: 5px;
+	box-shadow: 2px 2px 3px black;
+}
+fieldset
+{
+	background-color: lightgrey;
+}
+h1,h2
+{
+	text-align: center;
+}
+.fin
+{
+	text-align: center;
+}
+.button
+{
+  box-shadow: 2px 2px 3px black;
+}
+.titre
+{
+	padding: 35px;
+}
+.taille
+{
+	width: 100px;
+}
+.descri
+{
+	text-align: center;
+	background-color: whitesmoke;
+}

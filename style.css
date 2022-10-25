@@ -1,0 +1,29 @@
+header
+{
+	font-size:  2rem;
+}
+table
+{
+	background-color: #00b5ff;
+	margin-left: 30%;
+	margin-right: 30%;
+	width: 40%;
+	border: 3px solid #00a5ff;
+
+}
+.ans
+{
+	font-size: 1.5rem;
+	background: url("fond.jpg");
+}
+td
+{
+	text-align: center;
+	background-color: #00b5ff;
+	border: 1px solid #00b5ff;
+}
+.vide
+{
+	background-color: #00b5ff;
+	border: solid #00b5ff;
+}

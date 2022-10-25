@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function calcul_moyenne(argument) 
+	{
+		var note1 = prompt("doner la première note");
+		var note2 = prompt("doner la deuxième note");
+		var note3 = prompt("doner la troisième note");
+		var somme = note1*3 + note2*2 + note3*3;
+		var moyenne = somme /8;
+		document.write("voici la moyenne:"+moyenne + "     " );
+		if (moyenne>=10) 
+			document.write("vous êtes admis");
+		else 
+			document.write("vous êtes redoublant")
+	}
+	function age_test() 
+	{
+		var age = prompt("donner votre age");
+		if (age>100 || age<=0) 
+		{ 
+			document.bgColor="red";
+			alert("attention age invalide");
+			
+		}
+		else 
+		{
+			alert("valide");
+			document.bgColor="green";
+		}
+	}
+	function simple_affichage(argument) 
+	{
+		var prenom = prompt("prénom");
+		var nom = prompt("nom");
+		document.write("<div style='background-color:grey; border:4px solid black; text-align:center; font-size:2rem'>");
+		document.write("<p1 style='color:red';> Bonjour   " + prenom + "   " + nom + "</p1>"); 
+		document.write("</div>");
+	}
+	function choix_couleur(argument) 
+	{
+		var couleur = prompt("donner une couleur");
+		if (couleur == "rouge" || couleur == "ROUGE")
+			document.bgColor="red";
+		else if (couleur == "bleu" || couleur == "BLEU")
+			document.bgColor="blue";
+		else if (couleur == "vert" || couleur == "VERT")
+			document.bgColor="green";
+		else alert("error: couleur non reconnu")
+	}
+
+</script>
+
+<h1>4 exercices simple en JavaScript :</h1>
+<button onclick="calcul_moyenne()"> calculer la moyenne </button>
+<button onclick="age_test()"> tester l'age </button>
+<button onclick="simple_affichage()"> affichage simple </button>
+<button onclick="choix_couleur()"> couleurs </button>
+
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<title></title>
+</head>
+<body>
+	<fieldset border="2">
+		<legend>Mon formulaire</legend>
+ <h1> Pique-nique de fin d'année </h1>
+ <h2> Inscription </h2>
+</fieldset>
+<br> 
+	<fieldset>
+		<legend> Je m'identifie</legend>
+<table border="0" width="50%">
+		<tr>
+			<td> Nom et prénom: </td>
+			<td> <input type="text" name="Nom" placeholder="Saisir votre Nom" class="inp"> </td>
+			<td rowspan="4"> <img src="logo.png" width="100"></td>
+		</tr>
+		<tr>
+			<td>Ma classe: </td>
+			<td> <select>
+				<option> Veuillez choisir une classe </option>
+				<option> SIO </option>
+				<option> SN </option>
+		</select> </td>
+		</tr>
+		<tr>
+			<td> Mon email: </td>
+			<td> <input type="text" name="email" placeholder="Saisir votre email" class="inp"> </td>
+		</tr>
+		<tr>
+			<td> Mon mot de passe: </td>
+			<td> <input type="password" name="pass" placeholder="Saisir votre mot de passe" class="inp"> </td>
+		</tr>
+
+	</table>
+	</fieldset>
+	<br>
+	<fieldset>
+		<legend>Informations complémentaires</legend>
+		<table width="50%">
+			<tr>
+			<td> Mes disponibilitées : </td>
+			<td> Lundi 10 Juin <input type="checkbox" name="C1"></td>
+			<td> Mardi 11 Juin <input type="checkbox" name="C1"></td>
+			<td> Mercrdi 12 Juin <input type="checkbox" name="C1"></td>
+			<br>
+		</tr>
+		<tr>
+			<td> J'apporterai... : </td>
+			<td> Une entrée <input type="checkbox" name="C1"></td>
+			<td> Un plat <input type="checkbox" name="C1"></td>
+			<td> Un dessert <input type="checkbox" name="C1"></td>
+		</tr>
+		</table>
+		<br>
+
+		Je laisse une message (faculatatif) :
+		<br><br>
+		<textarea  placeholder="Maximum 160 caractères" rows="5" cols="80"></textarea>
+	</fieldset>
+	<table width="100%">
+	<tr>
+			<br>
+			<td> <input type="button" name="bt1" value="Je m'inscris" class="button">
+<input type="button" name="bt1" value="Je reinitialise le formulaire" class="button"></td>
+		</tr>
+	</table>
+</body>
+</html>
