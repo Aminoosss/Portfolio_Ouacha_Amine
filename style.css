@@ -2,6 +2,26 @@ header
 {
 	font-size:  2rem;
 }
+
+.zone 
+{
+	text-align: center;
+	border: solid 3px blueviolet;
+	border-radius: 30px;
+	padding: 2%;
+}
+
+.bt
+{
+	border: solid 3px blueviolet;
+	border-radius: 30px;
+}
+.txt
+{
+	border-radius: 30px;
+	font-family: cursive;
+	background-color: lightpink;
+}
 table
 {
 	background-color: #00b5ff;
@@ -9,6 +29,7 @@ table
 	margin-right: 30%;
 	width: 40%;
 	border: 3px solid #00a5ff;
+	border-radius: 15px;
 
 }
 .ans
