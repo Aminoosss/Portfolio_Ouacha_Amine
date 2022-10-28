@@ -5,23 +5,58 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<script type="text/javascript">
-		function calculer(argument) 
+
+		function calculer()
+		{
+			var a = document.getElementById("t1").value;
+			var b = document.getElementById("t2").value;
+			var c = Number(a)+Number(b);
+			t3.value = c;
+
+		}
+		function resulat(argument) 
 		{
 			var a = document.getElementById("n1").value;
 			var b = document.getElementById("n2").value;
-			var c = Number(a) + Number(b);
-			document.getElementById("res").value = c;
+			var c = document.getElementById("n3").value;
+			var d = Number(a) + Number(b) + Number(c);
+			var moyenne = d /3;
+			document.getElementById("r1").value = moyenne;
+		
+		if (moyenne>=10 && moyenne<12) {
+			document.getElementById("r2").value = "Passable";
 		}
+		else if (moyenne>=12 && moyenne<15) {
+			document.getElementById("r2").value = "Bien";
+		}
+		else if (moyenne>=15) {
+			document.getElementById("r2").value = "Très bien"; 
+		}
+		else {
+			document.getElementById("r2").value = "Non Admis";
+		}
+	}
 	</script>
 </head>
 <body>
+
+<fieldset border="2">
+		<legend> Calculatrice </legend>
+		<input type="text" name="t1" id="t1" placeholder="Saisir une valeur">
+		<input type="text" name="t2" id="t2" placeholder="Saisir une valeur">
+		<input type="text" name="t3" id="t3" placeholder="Résultat" readonly="">
+		<button onclick="calculer()">Calculer</button>
+</fieldset> <br>
 <fieldset>
-		<legend> Calcul</legend>
-<input type="text" name="num1" id="n1" placeholder="Saisir une valeur">
-<input type="text" name="num2" id="n2" placeholder="Saisir une valeur">
-<input type="text" name="res" id="res" placeholder="Résultat" readonly>
-<button onclick="calculer()"> calculer </button>
+		<legend> Relevé de notes</legend>
+		<table>
+<tr> <td> Note 1 <input type="text" name="num1" id="n1"> </td> <td></td> <td> Votre moyenne :</td> <td> <input type="text" name="res1" id="r1"> </td> </tr>
+<tr> <td> Note 2 <input type="text" name="num2" id="n2"> </td>
+<td> <button onclick="resulat()"> Résultat </button> </td>
+<tr> <td> Note 3 <input type="text" name="num3" id="n3"> </td> <td></td> <td> Le résultat :</td> <td> <input type="text" name="res2" id="r2"> </td> </tr>
+</table>
 </fieldset>
+
 
 </body>
 </html>

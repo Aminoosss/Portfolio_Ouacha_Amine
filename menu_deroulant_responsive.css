@@ -2,6 +2,8 @@ body{
 	font-family:  verdana, calibri, sans-serif;
 	margin: 0px;
 	padding: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 nav > ul{
@@ -132,9 +134,11 @@ div {
 	text-align: center;
 	padding: 100px;
 	font-size: 35px;
-	font-family: fantasy;
-	border: solid red;
+	font-family: monospace;
+	color: white;
+	border:  solid royalblue;
+	border-style: dashed;
 	margin: 100px;
-	border-radius: 10px;
-	background-color: lightgrey;
+	border-radius: 100px;
+	background-color: black;
 }
